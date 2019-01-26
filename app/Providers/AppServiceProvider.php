@@ -16,9 +16,8 @@ class AppServiceProvider extends ServiceProvider
 
       // 以下を追記
       if (\App::environment('production')) {
-      \URL::forceScheme('https');
+            \URL::forceScheme('https');
       }
-}
     }
 
     /**
